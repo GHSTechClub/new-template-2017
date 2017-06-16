@@ -5,6 +5,7 @@
 # testing
 
 # production
+node_modules
 
 # misc
 .DS_Store
