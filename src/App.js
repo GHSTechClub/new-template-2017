@@ -10,7 +10,7 @@ class App extends Component {
           <div className="logo">
             <img src={logo} alt=""/>
             <div className="logoText">
-              <h3>Grossmot <span className='yellow'>High School</span></h3>
+              <h3>Grossmont <span className='yellow'>High School</span></h3>
               <h1>Clubs</h1>
             </div>
           </div>
