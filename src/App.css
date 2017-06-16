@@ -1,0 +1,41 @@
+:root{
+  --yellow: #ffc102;
+  --blue: #003a8c;
+  --red: #c33c54;
+  --jean-blue: #254e70;
+  --gray-blue: #37718e;
+  --gray: #3c3c3c;
+}
+.yellow{
+  color: var(--yellow);
+}
+/*Navbar*/
+.navbar{
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #3c3c3c;
+  height: 120px;
+}
+.logo{
+  display: inline-block;
+  width: auto;
+  height: 100%;
+}
+.logo > img{
+  height: 100%;
+}
+.logoText{
+    display: inline-block;
+    position: absolute;
+    color: white;
+}
+.logoText > h1{
+  padding: 0px;
+  margin: 0px;
+  font-size: 300%;
+}
+.logoText > h3{
+  margin: 0px;
+  margin-top: 30px;
+}
