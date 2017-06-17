@@ -57,6 +57,10 @@ body{
     right: 20px;
     width: 50px;
     height: 60px;
+    cursor: pointer;
+}
+.sideTrigger{
+  transition: all 50ms linear;
 }
 .sideTrigger:first-child{
   background-color: var(--yellow);
@@ -69,12 +73,15 @@ body{
   width: 80%;
   height: 8px;
   margin-top: 8px;
-  float: right;
+  margin-left: 10px;
 }
 .sideTrigger:nth-child(3){
   background-color: var(--yellow);
   width: 60%;
   height: 8px;
   margin-top: 8px;
-  float: right;
+  margin-left: 20px;
+}
+.topright:hover .sideTrigger{
+  margin-left: 0px;
 }

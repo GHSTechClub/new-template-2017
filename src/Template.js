@@ -13,6 +13,8 @@ if(active !== "./clubs/Search"){
 }else{
   var open2 = 'yellow'
 }
+
+
 class App extends Component {
   render() {
     return (
