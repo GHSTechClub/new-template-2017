@@ -7,13 +7,14 @@ var active = window.location.href;
 open1 = 'black';
 // eslint-disable-next-line
 open2 = 'black';
+
+var sesame = ' closed';
 // eslint-disable-next-line
 if(active !== "./clubs/Search"){
   var open1 = 'yellow'
 }else{
   var open2 = 'yellow'
 }
-
 
 class App extends Component {
   render() {
@@ -32,10 +33,10 @@ class App extends Component {
             <div className="sideTrigger"></div>
             <div className="sideTrigger"></div>
           </div>
-          <div className="sidebar">
+          <div className="sidebar" id={sesame}>
+            <div className="g-signin2" data-onsuccess="onSignIn"></div>
             <h1><span className={open1 + " navLink"}>Home</span></h1>
             <h1><span className={open2 + " navLink"}>Clubs</span></h1>
-            <div className="g-signin2" data-onsuccess="onSignIn"></div>
           </div>
         </div>
       </div>

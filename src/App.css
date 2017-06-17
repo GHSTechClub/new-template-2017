@@ -45,12 +45,15 @@ body{
 .sidebar{
     position: absolute;
     display: inline-block;
-    right: -125px;
     top: 0px;
-    width: 120px;
+    width: 250px;
     background-color: var(--gray);
     border-left: 5px solid var(--yellow);
 }
+#closed{
+  right: -255px;
+}
+
 .topright{
     position: absolute;
     top: calc(120px / 4);
