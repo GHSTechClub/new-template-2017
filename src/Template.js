@@ -8,13 +8,14 @@ open1 = 'black';
 // eslint-disable-next-line
 open2 = 'black';
 
-var sesame = ' closed';
+var sesame = 'closed';
 // eslint-disable-next-line
 if(active !== "./clubs/Search"){
   var open1 = 'yellow'
 }else{
   var open2 = 'yellow'
 }
+
 
 class App extends Component {
   render() {
@@ -28,11 +29,8 @@ class App extends Component {
               <h1>Clubs</h1>
             </div>
           </div>
-          <div className="topright">
-            <div className="sideTrigger"></div>
-            <div className="sideTrigger"></div>
-            <div className="sideTrigger"></div>
-          </div>
+          {/*Doing some cool stuff*/}
+          <Opener/>
           <div className="sidebar" id={sesame}>
             <div className="g-signin2" data-onsuccess="onSignIn"></div>
             <h1><span className={open1 + " navLink"}>Home</span></h1>
@@ -44,5 +42,20 @@ class App extends Component {
   }
 }
 
+class Opener extends Component{
+  render(){
+    return(
+      <div className="topright" onClick={() => openSeasame()}>
+        <div className="sideTrigger"></div>
+        <div className="sideTrigger"></div>
+        <div className="sideTrigger"></div>
+      </div>
+    )
+  }
+}
 
+
+function openSeasame(){
+  console.log('yes')
+}
 export default App;
