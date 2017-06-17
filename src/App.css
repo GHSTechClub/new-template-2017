@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 :root{
   --yellow: #ffc102;
   --blue: #003a8c;
@@ -38,4 +41,40 @@
 .logoText > h3{
   margin: 0px;
   margin-top: 30px;
+}
+.sidebar{
+    position: absolute;
+    display: inline-block;
+    right: -125px;
+    top: 0px;
+    width: 120px;
+    background-color: var(--gray);
+    border-left: 5px solid var(--yellow);
+}
+.topright{
+    position: absolute;
+    top: calc(120px / 4);
+    right: 20px;
+    width: 50px;
+    height: 60px;
+}
+.sideTrigger:first-child{
+  background-color: var(--yellow);
+  width: 100%;
+  height: 8px;
+  margin-top:8px 
+}
+.sideTrigger:nth-child(2){
+  background-color: var(--yellow);
+  width: 80%;
+  height: 8px;
+  margin-top: 8px;
+  float: right;
+}
+.sideTrigger:nth-child(3){
+  background-color: var(--yellow);
+  width: 60%;
+  height: 8px;
+  margin-top: 8px;
+  float: right;
 }
